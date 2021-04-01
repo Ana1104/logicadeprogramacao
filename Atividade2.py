@@ -30,3 +30,14 @@ for numeros in lista:
     val1 += int(numeros)
 
 print(val1,',', val2)  
+
+
+def converte_entrada(texto):
+  lista = []
+  lista_temp=texto.split(" ")
+  for num in lista_temp:
+    lista.append(int(num))
+  return lista
+
+lista = converte_entrada(input())
+print(lista)
